@@ -1,0 +1,54 @@
+null device 
+          1 
+Sample mean: 32.23 
+95% CI (t):        [ 28.5 , 35.95 ]
+95% CI (bootstrap):[ 28.67 , 35.99 ]
+
+	One Sample t-test
+
+data:  x
+t = 1.1959, df = 57, p-value = 0.2367
+alternative hypothesis: true mean is not equal to 30
+95 percent confidence interval:
+ 28.49870 35.95303
+sample estimates:
+mean of x 
+ 32.22586 
+
+One-sided (mean > 30) p-value: 0.1183 
+
+Type I error (truth = 30, test at 5%):
+  n = 10: 0.0545 
+  n = 60: 0.055   <- should be close to 0.05
+
+Power to detect a true mean of 33 (3 minutes over the claim):
+    n  power
+1  20 0.0800
+2  60 0.2510
+3 120 0.4980
+4 240 0.8075
+5 400 0.9620
+null device 
+          1 
+
+Sample size for 80% power: 240 deliveries
+
+	Welch Two Sample t-test
+
+data:  night and day
+t = 1.7292, df = 55.649, p-value = 0.08932
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.003775 13.658948
+sample estimates:
+mean of x mean of y 
+ 35.38966  29.06207 
+
+Warning message:
+In wilcox.test.default(night, day) : cannot compute exact p-value with ties
+Wilcoxon p-value: 0.0725 
+Night minus day: 6.33 minutes; Cohen's d = 0.45 
+
+One family of 20 true-null tests:
+  'significant' at 0.05: 7 | after Bonferroni: 2 
+  Chance of >=1 false positive across 20 tests (simulated): 0.682 | theory: 0.642 

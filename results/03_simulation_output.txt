@@ -1,0 +1,11 @@
+Standard error of the mean (n = 58 ):
+  simulated: 1.909  theory: 1.936  from sample: 1.861 
+null device 
+          1 
+
+Bootstrap SE: 1.843 
+null device 
+          1 
+
+Monte Carlo P(time > 30): 0.5004 | exact: 0.5001 
+Monte Carlo P(time > 60): 0.0486 | exact: 0.0485 

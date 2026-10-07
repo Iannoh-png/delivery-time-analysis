@@ -1,0 +1,10 @@
+QUESTION:
+Is the true mean delivery time different from the claimed 30 minutes, and by how much?
+
+STATISTIC: Across 58 deliveries the mean was 32.2 min (95% CI 28.5 to 36.0).
+EVIDENCE: p = 0.237. Data like this are not unusual if the true mean were 30, so evidence against the claim is weak.
+POWER CHECK: with n = 58 the chance of detecting a true 3-minute shortfall is about 25%; ~240 deliveries would give 80%.
+
+CONCLUSION: We cannot reject the claim, but that is NOT proof it is true. A non-significant result with low power is inconclusive.
+
+EXTRA: Night deliveries were 6.3 min slower than day (Welch p = 0.089, Cohen's d = 0.45).

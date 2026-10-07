@@ -1,0 +1,38 @@
+'data.frame':	60 obs. of  3 variables:
+ $ id   : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ shift: chr  "day" "day" "day" "day" ...
+ $ time : num  49.8 19.2 27.4 13.3 25.2 18.1 NA 25.8 13.4 10.6 ...
+  id shift time
+1  1   day 49.8
+2  2   day 19.2
+3  3   day 27.4
+4  4   day 13.3
+5  5   day 25.2
+6  6   day 18.1
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   7.50   19.25   32.60   32.23   42.27   62.70       2 
+Missing values per column:
+   id shift  time 
+    0     0     2 
+Rows before: 60  after: 58 
+Mean by loop: 32.22586  | mean(): 32.22586 
+Sample mean is ABOVE the claim. But is that just chance? (Stage 4)
+
+   late on time 
+     33      25 
+
+Overall summary:
+     n   mean     sd median    max 
+ 58.00  32.23  14.18  32.60  62.70 
+
+Summary by shift:
+         day night
+n      29.00 29.00
+mean   29.06 35.39
+sd     14.48 13.37
+median 25.80 34.60
+max    61.40 62.70
+null device 
+          1 
+null device 
+          1 
