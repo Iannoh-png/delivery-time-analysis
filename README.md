@@ -6,7 +6,7 @@ A delivery company claims its average delivery time is **30 minutes**. We analys
 Delivery times are right-skewed (a few very late orders), so textbook formulas are only approximately right. That makes this a good excuse to use numerical methods and simulation, not just `t.test()`.
 
 > **Note on data:** the data are simulated in `01_programming.R` (gamma distribution, night shift slightly slower than day). Because we know how the data were generated, we can check our methods against the truth.
-> **Note on process:** project structure developed with AI assistance (Claude); code run, checked and interpreted by me. *(Edit this line to describe your own contribution.)*
+> **Note on process:** project structure developed with AI assistance (Claude); code run, checked and interpreted by me. 
 
 ## Project structure
 
@@ -77,9 +77,6 @@ Multiple testing: in one family of 20 tests where the null was true every time, 
 > **Evidence:** p = 0.237. Data like this are not unusual if the true mean were 30, so evidence against the claim is weak.
 > **Conclusion:** We **cannot reject** the 30-minute claim, but that is **not proof it is true**. With n ≈ 58 the study had only about 25% power to detect a 3-minute shortfall, so the result is inconclusive. About 240 deliveries would be needed. Night deliveries look slower than day deliveries (+6.3 min, medium effect size), but that difference is also not statistically significant at this sample size.
 
-## Things I learned / would improve
-
-*(Write your own here, for example: which stage was hardest, what surprised you, what you'd change.)*
 
 - Ideas to extend: use a real delivery dataset, add a second distribution (log-normal) and compare fits by likelihood, add a confidence interval for the proportion of late deliveries, try a permutation test.
 
